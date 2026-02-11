@@ -2,7 +2,7 @@ spring:
   application:
     name: LibraryDAW
   datasource:
-    url: jdbc:mysql://localhost:3307/bookdb
+    url: jdbc:mysql://localhost:3309/bookdb
     username: bookuser
     password: bookpass
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -21,7 +21,7 @@ spring:
       mode: always
 
 server:
-  port: 8097
+  port: 8099
 
 logging:
   level:

@@ -8,10 +8,11 @@ import org.springframework.stereotype.Repository;
 import com.daw2.LibraryDAW.model.Book;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public interface BookRepository extends JpaRepository<Book, Long> {
-    
+	List<Book> findByTitleAndAuthor(String title, String author);	
     List<Book> findByAuthor(String author);
     
     List<Book> findByGenre(String genre);
